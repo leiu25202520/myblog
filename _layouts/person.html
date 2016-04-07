@@ -9,5 +9,6 @@ layout: default
 
 <div class="person-body">
   {{ page.content }}
+  <p>{{ page.date | date_to_string}}</p>
   <a href="{{ page.wikipedia-url}}">Read more about {{ page.first-name }} {{ page.last-name }} on Wikipedia</a>
 </div>
