@@ -37,15 +37,28 @@ git push origin gh-pages
   git config --global alias.ci "commit -a -v"
 
 {% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
+git init
+ls -a
+git status
 {% endhighlight %}
 
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
+{% highlight ruby %}
+git add README
+git commit -m "1st"
+git config --global user.name "Peter Wang"
+git config --global user.email "happypeter1983@gmail.com"
+git log
+git log -p
+{% endhighlight %}
 
-[jekyll-docs]: http://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+{% highlight ruby %}
+git commit -a
+git diff
+git config --global core.editor vim
+git commit -a -v
+git config --global alias.ci "commit -a -v"
+{% endhighlight %}
+
+Check out the [git 基本配置][git basic]
+
+[git basic]: http://haoduoshipin.com/v/4
