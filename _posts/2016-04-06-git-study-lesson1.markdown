@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "git 基本配置和使用!"
 date:   2016-04-06 07:43:07 +0800
 ---
 ＃git命令
