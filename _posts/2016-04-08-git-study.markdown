@@ -1,45 +1,41 @@
 ---
 layout: post
-title:  "git 常用命令学习"
+title:  "git 工作流"
 date:   2016-04-08 19:55:07 +0800
 ---
-＃git命令
-// 设置git 快捷命令
-git config --global alias.ci "commit -a -v"
-git config --global alias.throw "reset hard HEAD"  //放弃修改
-git config --global alias.thrown "reset hard HEAD^"   //放弃头版本
 
+{% highlight ruby %}
+[alias]
+    ci = commit -a -v
+    throw = reset --hard HEAD
+    throwh = reset --hard HEAD^
+{% endhighlight %}
+
+{% highlight ruby %}
 git add .
 git ci
 git diff
 git throw
 git throwh
+{% endhighlight %}
 
+{% highlight ruby %}
 git ci
-
 git checkout hello.h
+{% endhighlight %}
 
+{% highlight ruby %}
 git stash
 #work on sth else and commit it
 git stash apply
+{% endhighlight %}
+
+{% highlight ruby %}
 git checkout -b tmp
 git checkout master
 git branch -D tmp
 git checkout fe544a -b tmp
-
-
-// 同时修改 多个文件 其中一个文件 不提交
-git checkout 文件
-
-//如果在修改文件时发现有一个bug，需要保存 修改中的内容  同时把bug解决
-git stash
-
-git ci  提交修改的小bug
-
-git stash apply  将藏起来的修改 继续修改
-
-
-
+{% endhighlight %}
 
 
 
