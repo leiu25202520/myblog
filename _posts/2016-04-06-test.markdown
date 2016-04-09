@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Welcome to Jekyll!"
-date:   2016-04-03 07:43:07 +0800
+date:   2016-04-06 07:43:07 +0800
 ---
 ＃git命令
 git remote add origin https://xxx.github.com/xxx
@@ -17,7 +17,6 @@ git checkout gh-pages
 git push origin gh-pages
 
 
-{% highlight ruby %}
 
 //git 基本使用
   sudo apt-get install git
@@ -36,6 +35,12 @@ git push origin gh-pages
   git config --global core.editor vim
   git commit -a -v
   git config --global alias.ci "commit -a -v"
+
+{% highlight ruby %}
+def print_hi(name)
+  puts "Hi, #{name}"
+end
+print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
 {% endhighlight %}
 
